@@ -1,0 +1,54 @@
+---
+title: "Class 11: Structural Bioinformatics Part I"
+author: "Katherine Wong (A16162648)"
+date: "11/2/2021"
+output: 
+  pdf_document: default
+  html_document: default
+---
+
+```{r}
+db <- read.csv("Data Export Summary.csv", row.names = 1)
+head(db)
+```
+
+> Q1: What percentage of structures in the PDB are solved by X-Ray and Electron Microscopy.
+
+```{r}
+method.sums <- colSums(db)
+round((method.sums/method.sums["Total"] * 100), 2)
+```
+EM: 4.92%
+X-ray 87.55%
+
+> Q2: What proportion of structures in the PDB are protein?
+
+```{r}
+round(db$Total/method.sums["Total"] * 100, 2)
+```
+proteins: 87.36%
+
+> Q3: Type HIV in the PDB website search box on the home page and determine how many HIV-1 protease structures are in the current PDB?
+
+1828 Structures
+
+## VMD structure visualization image
+
+![](vmdscene.png)
+
+> Q4: Water molecules normally have 3 atoms. Why do we see just one atom per water molecule in this structure?
+
+Hydrogen atoms are way too small in comparison to oxygen, so we can only see oxygen!
+
+> Q5: There is a conserved water molecule in the binding site. Can you identify this water molecule? What residue number does this water molecule have (see note below)?
+
+Residue 308.
+
+# Sequence Viewer Extension (Optional)
+
+> Q6: As you have hopefully observed HIV protease is a homodimer (i.e. it is composed of two identical chains). With the aid of the graphic display and the sequence viewer extension can you identify secondary structure elements that are likely to only form in the dimer rather than the monomer?
+
+Not sure:) 
+
+
+
