@@ -2,7 +2,9 @@
 title: "class09_mini_project_Rmd"
 author: "Katherine Wong (A16162648)"
 date: "10/26/2021"
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
 ---
 # Preparing the data
 
@@ -11,7 +13,7 @@ output: html_document
 fna.data <- "WisconsinCancer.csv"
 #Complete the following code to input the data and store as wisc.df
 wisc.df <- read.csv(fna.data, row.names=1)
-wisc.df
+#wisc.df
 ```
 # Create a new data.frame that omits first column (pathologist diagnosis)
 
@@ -23,6 +25,7 @@ diagnosis <- as.factor(wisc.df$diagnosis)
 ```
 
 #Exploratory dataset
+
 > Q1. How many observations are in this dataset?
 
 ```{r}
@@ -30,6 +33,7 @@ dim(wisc.data)
 length(diagnosis)
 ```
 There are 569 samples or observations in wisc.data and diagnosis. 
+
 > Q2. How many of the observations have a malignant diagnosis?
 
 ```{r}
@@ -61,6 +65,7 @@ wisc.pr <- prcomp(wisc.data, scale=TRUE)
 # Look at summary of results
 summary(wisc.pr)
 ```
+
 > Q4. From your results, what proportion of the original variance is captured by the first principal components (PC1)?
 
 The proportion of the original variance captured by PC1 is 0.4427 or 44.27%. 

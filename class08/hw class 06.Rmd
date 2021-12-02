@@ -1,0 +1,34 @@
+---
+title: "hw class 6"
+author: "Katherine Wong (A16162648)"
+date: "10/23/2021"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+# Write a function 
+
+> Q6. How would you generalize the original code above to work with any set of input protein structures?
+
+
+```{r}
+# load library
+library(bio3d)
+# input is a list of 3 proteins 
+input <- list("4AKE", "1AKE", "1E4Y")
+# function that takes an input (list) and iterates through elements of the list to create plots of each protein's Bfactor trends
+plots <- function(input) {
+  # for each element in list
+  for (x in input) {
+    # read the pdb file
+    s <- read.pdb(x)
+    # create a smaller pdb object w subset of atoms
+    s.chainA <- trim.pdb(s, chain="A", elety="CA")
+    s.b <- s.chainA$atom$b
+    # plot
+    plotb3(s.b, sse=s.chainA, typ="l", ylab="Bfactor") 
+  }
+}
+plots(input)
+```

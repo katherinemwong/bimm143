@@ -1,0 +1,61 @@
+---
+title: "Project Part 3"
+author: "Katherine Wong (A16162648)"
+date: "11/28/2021"
+output: html_document
+---
+
+# Producing a heatmap
+
+```{r}
+library(bio3d)
+mine <- read.fasta("muscle-I20211127-085016-0256-96351925-p2m.clw.fst")
+example <- read.fasta("muscle-I20211129-070253-0928-20483899-p2m.clw.fst")
+```
+
+```{r}
+mine2 <- seqidentity(mine)
+ex2 <- seqidentity(example)
+mine2
+rowSums(mine2)
+```
+
+```{r}
+library(pheatmap)
+heatmap(1-ex2)
+heatmap(1-mine2, margins = c(15,15))
+```
+
+```{r}
+library(bio3d)
+seq <- c("MDVKSLGLLLALGFLGSCLAERDCRVSSFKVMQNFDRYRYAGTWYAVAKKDPEGIFLLDNIVAQFDVKPDGSMGATAKGRVIIFNNWELCANMVGRFRDTEDPAKFKMEYFGVLSFFESGEDNHWVVDTDYDTYAVHYSCRKLNADGTCKDGYSFVFSRDPSGLTPETQKIVRKKQEELCLERKYRLVVHNGFCDESNN")
+b <- blast.pdb(seq)
+
+```
+```{r}
+hits <- plot.blast(b)
+```
+
+```{r}
+b$hit.tbl
+ids <- c("1JYD_A", "1IIU_A", "1ERB_A")
+
+```
+
+```{r}
+ids <- c("1JYD_A", "3FMZ_A", "1BRP_A", "4O9S_A", "3BSZ_E", "6QBA_A", "2WQA_E", "1IIU_A", "2WQ9_A", "2WR6_A", "1JYJ_A", "1ERB_A", "1KT5_A", "1HBQ_A", "1AQB_A", "1RLB_E", "1QAB_E")
+
+```
+
+```{r}
+anno <- pdb.annotate(ids)
+unique(anno$source)
+anno
+anno <- anno[,c('structureId', 'experimentalTechnique', 'resolution', 'source')]
+anno
+
+```
+```{r}
+1IIU_A: Gallus Gallus
+```
+
