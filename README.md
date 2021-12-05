@@ -10,7 +10,7 @@ hello
 - Class 10: [Halloween Candy Mini-Project](https://github.com/katherinemwong/bimm143/blob/main/class10/class10.md)
 - Class 11: [Structural Bioinformatics Part 1](https://github.com/katherinemwong/bimm143/blob/main/class11/class11.md)
 - Class 12: [Structural Bioinformatics Part 2](https://github.com/katherinemwong/bimm143/blob/main/class11/class12.md)
-- Class 13: [Unix for Bioinformatics](https://github.com/katherinemwong/bimm143/blob/main/class13/class13.md)
+- Class 13: [Unix for Bioinformatics](https://github.com/katherinemwong/bimm143/blob/main/class13/class13.pdf)
 - Class 15: [Transcriptomics, RNA-Seq analysis, and the interpretation of gene lists](https://github.com/katherinemwong/bimm143/blob/main/class15/class15.md)
 - Class 16: [RNA-Seq mini project](https://github.com/katherinemwong/bimm143/blob/main/class16/class16.md)
 - Class 17: [Vaccination rate mini project](https://github.com/katherinemwong/bimm143/blob/main/class17/class17.md)
