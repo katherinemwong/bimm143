@@ -1,8 +1,9 @@
 ---
-title: "class09_mini_project_Rmd"
+title: "Unsupervised Mini Project"
 author: "Katherine Wong (A16162648)"
 date: "10/26/2021"
 output:
+  github_document:
   pdf_document: default
   html_document: default
 ---
