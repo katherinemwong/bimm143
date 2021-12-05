@@ -14,4 +14,4 @@ hello
 - Class 15: [Transcriptomics, RNA-Seq analysis, and the interpretation of gene lists](https://github.com/katherinemwong/bimm143/blob/main/class15/class15.md)
 - Class 16: [RNA-Seq mini project](https://github.com/katherinemwong/bimm143/blob/main/class16/class16.md)
 - Class 17: [Vaccination rate mini project](https://github.com/katherinemwong/bimm143/blob/main/class17/class17.md)
-- Class 18: [Genome informatics and high throughput sequencing] (https://github.com/katherinemwong/bimm143/blob/main/class18/class18.md)!
+- Class 18: [Genome informatics and high throughput sequencing](https://github.com/katherinemwong/bimm143/blob/main/class18/class18.md)
