@@ -3,6 +3,7 @@ title: 'Class 15: Transcriptomics and the analysis of RNA-Seq data'
 author: "Katherine Wong (A16162648)"
 date: "11/16/2021"
 output:
+  github_document:
   pdf_document: default
   html_document: default
 ---
