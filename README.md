@@ -1,7 +1,7 @@
 # BIMM143 Fall 2021
 Bioinformatics class at UC San Diego Fall 2021.
 This is a portfolio of my work/projects in this class.
-hello
+
 ## Contents
 - Class 5: [Data Visualization with ggplot2](https://github.com/katherinemwong/bimm143/blob/main/class05_github/class05.md)
 - Class 6: [R functions](https://github.com/katherinemwong/bimm143/blob/main/class06_github/class06.md)
